@@ -13,3 +13,5 @@ test:
 	./bucket_sort/main
 	nim compile ./heap_sort/main
 	./heap_sort/main
+	nim compile ./sequential_search/main
+	./sequential_search/main
