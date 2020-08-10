@@ -15,3 +15,9 @@ test:
 	./heap_sort/main
 	nim compile ./sequential_search/main
 	./sequential_search/main
+	nim compile ./binary_search/main
+	./binary_search/main
+	nim compile ./hash-based_search/main
+	./hash-based_search/main
+	nim compile ./string-hash-based_search/main
+	./string-hash-based_search/main

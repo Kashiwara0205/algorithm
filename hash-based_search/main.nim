@@ -1,6 +1,6 @@
 const HASH_TABLE_SIZE = 5
 
-proc hash(value: int): int = abs(value / HASH_TABLE_SIZE).toInt
+proc hash(value: int): int = abs(value mod HASH_TABLE_SIZE)
 
 proc loadTable(size: int, arr: seq[int]): seq[seq[int]] =
   var hash_table: seq[seq[int]] = newSeq[seq[int]](HASH_TABLE_SIZE)
