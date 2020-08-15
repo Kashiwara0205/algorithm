@@ -1,4 +1,4 @@
-import ../graph/main
+import ./graph
 
 proc dfsVisit(node: Node, counter: var int): void =
   node.color = Color.Gray
