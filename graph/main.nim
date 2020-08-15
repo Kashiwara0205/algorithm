@@ -4,7 +4,7 @@ type Color* = enum
   Black
 
 type Node = ref object
-  number: int
+  number*: int
   pred*: int
   discovered_cnt*: int
   finished_cnt*: int
@@ -16,10 +16,7 @@ proc newNode*(number: int): Node =
               finished_cnt: -1, color: Color.White, neighbor: @[])
 
 type Graph = ref object
-  nodes: seq[Node]
-
-proc getNodes*(graph: Graph): seq[Node] =
-  return graph.nodes
+  nodes*: seq[Node]
 
 proc newGraph*(nodes: seq[Node]): Graph =
   return Graph(nodes: nodes)
