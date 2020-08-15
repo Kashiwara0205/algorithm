@@ -3,7 +3,7 @@ type Color* = enum
   Gray
   Black
 
-type Node = ref object
+type Node* = ref object
   number*: int
   pred*: int
   discovered_cnt*: int
@@ -15,14 +15,14 @@ proc newNode*(number: int): Node =
   return Node(number: number, pred: -1, discovered_cnt: -1, 
               finished_cnt: -1, color: Color.White, neighbor: @[])
 
-type Graph = ref object
+type Graph* = ref object
   nodes*: seq[Node]
 
 proc newGraph*(nodes: seq[Node]): Graph =
   return Graph(nodes: nodes)
 
 block test:
-  let node_0 = newNode(0)
+  var node_0 = newNode(0)
   assert node_0.number == 0
   assert node_0.pred == -1
   assert node_0.discovered_cnt == -1
