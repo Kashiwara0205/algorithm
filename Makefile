@@ -1,4 +1,4 @@
-test:
+compile:
 	nim compile ./binary_search/main.nim
 	./binary_search/main
 
