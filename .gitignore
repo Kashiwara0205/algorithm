@@ -1,25 +1,27 @@
-./binary_search/main
+binary_search/main
 
-./breadth-first_search/main
+breadth-first_search/main
 
-./bucket_sort/main
+bucket_sort/main
 
-./counting_sort/main
+bubble_sort/main
 
-./depath-first_search/main
+counting_sort/main
 
-./dijstra_pq/main
+depath-first_search/main
 
-./hash-based_search/main
+dijstra_pq/main
 
-./heap_sort/main
+hash-based_search/main
 
-./insertion_srot/main
+heap_sort/main
 
-./quick_sort/main
+insertion_srot/main
 
-./sequential_search/main
+quick_sort/main
 
-./string-hash-based_search/main
+sequential_search/main
 
-./utils/main
+string-hash-based_search/main
+
+utils/main
