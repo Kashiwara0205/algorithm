@@ -1,7 +1,5 @@
-type Color* = enum
-  White
-  Gray
-  Black
+type Color* {.pure.} = enum 
+  White, Gray, Black
 
 type Node* = ref object
   number*: int
