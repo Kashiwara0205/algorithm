@@ -17,8 +17,8 @@ compile:
 	nim compile ./depath-first_search/main.nim
 	./depath-first_search/main
 
-	nim compile ./dijstra_pq/main.nim
-	./dijstra_pq/main
+	nim compile ./dijstra/main.nim
+	./dijstra/main
 
 	nim compile ./hash-based_search/main.nim
 	./hash-based_search/main
