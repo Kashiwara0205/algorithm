@@ -25,3 +25,5 @@ sequential_search/main
 string-hash-based_search/main
 
 utils/main
+
+dijstra_pq/main

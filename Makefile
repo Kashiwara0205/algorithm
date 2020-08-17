@@ -40,3 +40,6 @@ compile:
 
 	nim compile ./utils/main.nim
 	./utils/main
+
+	nim compile ./dijstra_pq/main.nim
+	./dijstra_pq/main
