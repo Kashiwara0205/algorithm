@@ -43,3 +43,6 @@ compile:
 
 	nim compile ./dijstra_pq/main.nim
 	./dijstra_pq/main
+
+	nim compile ./dijstra_dg/main.nim
+	./dijstra_dg/main

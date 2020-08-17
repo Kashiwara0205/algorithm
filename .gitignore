@@ -27,3 +27,5 @@ string-hash-based_search/main
 utils/main
 
 dijstra_pq/main
+
+dijstra_dg/main
