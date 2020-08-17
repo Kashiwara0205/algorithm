@@ -2,7 +2,7 @@ import ./graph
 
 proc dfsVisit(node: Node, counter: var int): void =
   node.color = Color.Gray
-  inc(counter)
+  counter.inc
   node.discovered_cnt = counter
   for x in node.neighbor:
     if x.color == Color.White:
@@ -10,7 +10,7 @@ proc dfsVisit(node: Node, counter: var int): void =
       dfsVisit(x, counter)
 
   node.color = Color.Black
-  inc(counter)
+  counter.inc
   node.finished_cnt = counter
 
 proc depathFirstSearch(graph: Graph, start: int): void =

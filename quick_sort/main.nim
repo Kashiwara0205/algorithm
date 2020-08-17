@@ -2,13 +2,13 @@ import ../utils/main
 
 proc partion(arr: var seq[int], left: int, right: int): int =
   let p = abs( (left + right) / 2).toInt
-  swap(arr, p, right)
+  swap(arr[p], arr[right])
   var store = left
   for i in countup(left, right - 1):
     if arr[i] <= arr[right]: 
-      swap(arr, i, store)
-      inc(store)
-  swap(arr, store, right)
+      swap(arr[i], arr[store])
+      store.inc
+  swap(arr[store], arr[right])
   result = store
 
 proc quickSort(arr: var seq[int], left: int, right: int): void =

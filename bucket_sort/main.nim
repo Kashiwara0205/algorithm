@@ -8,7 +8,7 @@ proc extract(bucket: var seq[seq[int]], arr: var seq[int]):void =
     insertionSort(bucket[i])
     for conetent in bucket[i]: 
       arr[idx] = conetent
-      inc(idx)
+      idx.inc
 
 proc sort(arr: var seq[int]): void =
   # make bucket

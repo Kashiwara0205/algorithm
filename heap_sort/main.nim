@@ -9,7 +9,7 @@ proc heapfiy(arr: var seq[int], idx: int, max: int): void =
   if left < max and arr[left] > arr[idx]: largest = left
   if right < max and arr[right] > arr[largest]: largest = right
   if largest != idx:
-    swap(arr, idx, largest)
+    swap(arr[idx], arr[largest])
     heapfiy(arr, largest, max)
 
 proc buildHeap(arr: var seq[int]): void =
