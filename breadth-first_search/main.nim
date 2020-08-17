@@ -11,7 +11,7 @@ proc visit(nodes: seq[Node], queue: var seq[int]): void =
           node.color = Color.Gray
           queue.enqueue(node.number)
 
-    queue.dequeue
+    discard queue.dequeue
     source_node.color = Color.Black
 
 proc breadthFirstSearch(graph: Graph, start: int): void = 

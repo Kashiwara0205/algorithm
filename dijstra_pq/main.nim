@@ -4,8 +4,7 @@ import ../utils/main
 
 proc visit(nodes: seq[Node], table: DistanceTable, priority_queue: var seq[int]): void =
   while priority_queue.len != 0:
-    let source_node = nodes[priority_queue.first]
-    priority_queue.dequeue
+    let source_node = nodes[priority_queue.dequeue]
     for node in source_node.neighbor:
       let w = table.getDistance(source_node, node)
       let new_dist = source_node.dist + w

@@ -1,7 +1,7 @@
 proc swap*(arr: var seq[int], i: int, j: int): void
 proc insertionSort*(arr: var seq[int]): void
 proc enqueue*(arr: var seq[int], val: int): void
-proc dequeue*(arr: var seq[int]): void
+proc dequeue*(arr: var seq[int]): int
 proc first*(arr: var seq[int]): int
 
 proc swap*(arr: var seq[int], i: int, j: int): void =
@@ -25,7 +25,8 @@ proc insertionSort*(arr: var seq[int]): void =
 proc enqueue*(arr: var seq[int], val: int): void = 
   arr.add(val)
 
-proc dequeue*(arr: var seq[int]): void = 
+proc dequeue*(arr: var seq[int]): int =
+  result = arr.first 
   arr.delete(0)
 
 proc first*(arr: var seq[int]): int =

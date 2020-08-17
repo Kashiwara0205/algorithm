@@ -12,7 +12,7 @@ proc visit(nodes: seq[Node], table: DistanceTable, queue: var seq[int]): void =
         node.dist = new_dist
         node.pred = source_node.number
 
-    queue.dequeue
+    discard queue.dequeue
 
 proc singleSourceShortest(graph: Graph, table: DistanceTable, start: int): void =
   var queue: seq[int]
