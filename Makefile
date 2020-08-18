@@ -49,3 +49,6 @@ compile:
 
 	nim compile ./bellman-ford/main.nim
 	./bellman-ford/main
+
+	nim compile ./floyd-warshall/main.nim
+	./floyd-warshall/main
