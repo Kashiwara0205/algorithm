@@ -46,3 +46,6 @@ compile:
 
 	nim compile ./dijstra_dg/main.nim
 	./dijstra_dg/main
+
+	nim compile ./bellman-ford/main.nim
+	./bellman-ford/main

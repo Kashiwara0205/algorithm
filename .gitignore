@@ -29,3 +29,5 @@ utils/main
 dijstra_pq/main
 
 dijstra_dg/main
+
+bellman-ford/main
