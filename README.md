@@ -9,7 +9,7 @@ make compile
 ```
 
 ## Pull Request
-This repository implementing and studying algorithms by nim.
+This repository implementing and studying algorithms by nim.  
 If you implement an interesting algorithm, please issue a PR if you like.
 
 ## Implemented algorithm list
