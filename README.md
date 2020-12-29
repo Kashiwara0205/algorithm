@@ -18,7 +18,6 @@ If you implement an interesting algorithm, please issue a PR if you like.
 - bubble_sort
 - bucket_sort
 - counting_sort
-- hash-based_search
 - heap_sort
 - insertion_srot
 - quick_sort
