@@ -51,13 +51,19 @@ proc snake(diff: Wu, k: int, y: var int): int =
   return y
 
 block test:
-#[
   var diff = createOnpDiff("a", "b")
   assert diff.a == "a"
   assert diff.b == "b"
   assert diff.a_len == 1
   assert diff.b_len == 1
   assert diff.getEditDistance() == 2
+
+  diff = createOnpDiff("a", "a")
+  assert diff.a == "a"
+  assert diff.b == "a"
+  assert diff.a_len == 1
+  assert diff.b_len == 1
+  assert diff.getEditDistance() == 0
 
   diff = createOnpDiff("books", "animals")
   assert diff.a == "animals"
@@ -66,8 +72,8 @@ block test:
   assert diff.b_len == 5
   assert diff.b_len == 5
   assert diff.getEditDistance() == 6
-]#
-  var diff = createOnpDiff("abcdef", "dacfea")
+
+  diff = createOnpDiff("abcdef", "dacfea")
   assert diff.a == "abcdef"
   assert diff.b == "dacfea"
   assert diff.a_len == 6
