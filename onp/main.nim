@@ -1,22 +1,22 @@
 import algorithm
 
-type Wu = ref object
+type Onp = ref object
   a*: string
   b*: string
   a_len*: int
   b_len*: int
 
-proc snake(diff: Wu, k: int, y: var int): int
-proc getEditDistance*(diff: Wu): int
+proc snake(diff: Onp, k: int, y: var int): int
+proc getEditDistance*(diff: Onp): int
 
-proc createOnpDiff(a: string, b: string): Wu =
+proc createOnpDiff(a: string, b: string): Onp =
   if a.len >= b.len:
-    return Wu(a: a, b: b, a_len: a.len, b_len: b.len)
+    return Onp(a: a, b: b, a_len: a.len, b_len: b.len)
   else:
     # if "b" bigger than "a" then switch position.
-    return Wu(a: b, b: a, a_len: b.len, b_len: a.len)
+    return Onp(a: b, b: a, a_len: b.len, b_len: a.len)
 
-proc getEditDistance*(diff: Wu): int =
+proc getEditDistance*(diff: Onp): int =
   let offset = diff.a_len + 1
   let delta = diff.b_len - diff.a_len
   let size = diff.a_len + diff.b_len + 3
@@ -42,7 +42,7 @@ proc getEditDistance*(diff: Wu): int =
 
   return delta + 2 * p
 
-proc snake(diff: Wu, k: int, y: var int): int =
+proc snake(diff: Onp, k: int, y: var int): int =
   var x = y - k
   while(x < diff.a_len and y < diff.b_len and diff.a[x] == diff.b[y]):
     inc(x)

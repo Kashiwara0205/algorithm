@@ -53,5 +53,5 @@ compile:
 	nim compile ./floyd-warshall/main.nim
 	./floyd-warshall/main
 
-	nim compile ./wu/main.nim
-	./wu/main
+	nim compile ./onp/main.nim
+	./onp/main

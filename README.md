@@ -38,7 +38,7 @@ If you implement an interesting algorithm, please issue a PR if you like.
 - floyd-warshall
 
 ### edit-graph
-- wu
+- O(NP)
 
 ## License
 [MIT License](http://opensource.org/licenses/MIT).
